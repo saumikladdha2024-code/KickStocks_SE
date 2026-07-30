@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-base-border;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-base text-ink-primary antialiased;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* Tabular data should always use mono so digits align in tables/scores */
+  .font-tabular {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-feature-settings: "tnum" 1;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Visible keyboard focus everywhere — required for a professional product */
+  :focus-visible {
+    outline: 2px solid #4F8CFF;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: rgba(79, 140, 255, 0.3);
+  }
+
+  /* Thin, unobtrusive scrollbars to match terminal aesthetic */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1F2730;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2A333E;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Minimal, professional glass — used sparingly on key surfaces only */
+  .glass-panel {
+    background: rgba(16, 21, 28, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .panel {
+    @apply bg-base-panel border border-base-border rounded shadow-card;
+  }
+
+  .panel-hover {
+    @apply transition-all duration-250 hover:shadow-card-hover hover:border-white/10;
+  }
+}

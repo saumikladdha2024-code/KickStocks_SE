@@ -1,0 +1,40 @@
+export const POPULAR_STOCKS = {
+  us: [
+    { ticker: "AAPL", name: "Apple" },
+    { ticker: "MSFT", name: "Microsoft" },
+    { ticker: "NVDA", name: "NVIDIA" },
+    { ticker: "AMZN", name: "Amazon" },
+    { ticker: "GOOGL", name: "Google" },
+    { ticker: "META", name: "Meta" },
+    { ticker: "TSLA", name: "Tesla" },
+    { ticker: "AMD", name: "AMD" },
+    { ticker: "NFLX", name: "Netflix" },
+    { ticker: "PLTR", name: "Palantir" },
+    { ticker: "AVGO", name: "Broadcom" },
+    { ticker: "ORCL", name: "Oracle" },
+    { ticker: "IBM", name: "IBM" },
+    { ticker: "JPM", name: "JPMorgan" },
+    { ticker: "V", name: "Visa" },
+  ],
+
+  india: [
+    { ticker: "RELIANCE.NS", name: "Reliance" },
+    { ticker: "TCS.NS", name: "TCS" },
+    { ticker: "INFY.NS", name: "Infosys" },
+    { ticker: "HDFCBANK.NS", name: "HDFC Bank" },
+    { ticker: "ICICIBANK.NS", name: "ICICI Bank" },
+    { ticker: "SBIN.NS", name: "SBI" },
+    { ticker: "ITC.NS", name: "ITC" },
+    { ticker: "LT.NS", name: "L&T" },
+    { ticker: "BHARTIARTL.NS", name: "Bharti Airtel" },
+    { ticker: "HINDUNILVR.NS", name: "HUL" },
+  ],
+
+  indices: [
+    { ticker: "^NSEI", name: "NIFTY 50" },
+    { ticker: "^BSESN", name: "SENSEX" },
+    { ticker: "^GSPC", name: "S&P 500" },
+    { ticker: "^NDX", name: "NASDAQ 100" },
+    { ticker: "^DJI", name: "Dow Jones" },
+  ],
+};
