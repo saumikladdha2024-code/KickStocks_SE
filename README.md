@@ -181,7 +181,25 @@ KickStocks/
 ├── requirements.txt
 └── README.md
 ```
+Branching Strategy
 
+The KickStocks project follows the GitHub Flow branching strategy, which provides a simple and organized approach to software development. This workflow allows new features to be developed independently while keeping the main project stable.
+
+The main branch contains the stable and tested version of the application. New features and improvements are developed in separate feature branches, allowing changes to be implemented and tested without affecting the main codebase. For this project, a dedicated branch named feature/docker-setup was created to implement Docker containerization.
+
+The development process followed is:
+
+Create a feature branch from the main branch.
+Develop and test the new functionality.
+Commit changes with meaningful commit messages.
+Push the feature branch to GitHub.
+Merge the completed feature branch into the main branch after verification.
+
+This branching strategy offers several benefits, including better code organization, easier debugging, safer feature development, and a clear version history. It also supports collaborative development by allowing multiple features to be worked on simultaneously without disrupting the stable version of the project.
+
+Branch Name	Purpose
+main	Contains the stable and production-ready version of the application.
+feature/docker-setup	Used for developing Docker support before merging into the main branch.
 ---
 
 # 🚀 Future Improvements
