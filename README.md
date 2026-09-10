@@ -129,6 +129,29 @@ Technical  News  ML
         ▼
  BUY / HOLD / SELL
 ```
+---
+
+# 🎨 Software Design
+
+KickStocks follows a layered architecture with modular AI agents for technical analysis, news sentiment analysis, machine-learning prediction, and forecasting. The design applies modularity, abstraction, high cohesion, and low coupling to improve maintainability and support future extensions.
+
+## Architecture
+
+![KickStocks Updated Architecture](design/KickStocks_Updated_Architecture.png)
+
+The editable Draw.io source is available at [`design/KickStocks_Updated_Architecture.drawio`](design/KickStocks_Updated_Architecture.drawio).
+
+## UI Design
+
+The project includes six Figma screens covering the main KickStocks user workflows. Screenshots of the interfaces are available in the [`design/Figma_Screens`](design/Figma_Screens) directory.
+
+## Key Design Decisions
+
+- **Modular AI Agents:** Separate agents are used for technical analysis, news sentiment, machine learning, and forecasting.
+- **Layered Architecture:** Frontend, backend, AI agents, data, external services, and deployment are separated to improve maintainability.
+- **REST API Communication:** The frontend communicates with the backend through defined APIs instead of directly accessing models or external data sources.
+- **External Data Sources:** Yahoo Finance and Google News RSS provide market and financial news data.
+- **Docker Deployment:** Docker provides a consistent environment for running and deploying the application.
 
 ---
 
